@@ -1,4 +1,4 @@
-public class displayThreeMessages {
+public class p1_displayThreeMessages {
     public static void main(String[] args) {
 
         System.out.println("Welcome to Java!");
