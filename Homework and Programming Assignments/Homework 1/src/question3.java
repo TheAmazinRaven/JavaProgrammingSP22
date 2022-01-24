@@ -1,19 +1,24 @@
-//import java.util.Scanner;
-//
-//public class question3 {
-//    public static void main(String[] args) {
-//
-//        // declare variables
-//        double celcius = (5.0 / 9 * ( fahrenheit - 32));
-//
-//        // open scanner
-//
-//        Scanner input = new Scanner(System.in);
-//
-//        System.out.println("Enter a degree in Fahrenheit: ");
-//
-//    }
-//}
+import java.util.Scanner;
+
+public class question3 {
+    public static void main(String[] args) {
+
+        // open scanner
+
+        Scanner input = new Scanner(System.in);
+
+        // get input
+
+        System.out.println("Enter a degree in Fahrenheit: ");
+        double fahrenheit = input.nextDouble();
+
+        // declare variables
+        double Celsius = (5.0 / 9 * ( fahrenheit - 32));
+
+        System.out.println(fahrenheit + " F is " + Celsius + " C.");
+
+    }
+}
 
 /*
 Write a Java program that converts a Fahrenheit to degree Celsius using the formula:

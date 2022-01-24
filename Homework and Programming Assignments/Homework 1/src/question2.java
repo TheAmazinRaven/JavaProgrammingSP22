@@ -21,6 +21,7 @@ public class question2 {
 
         System.out.println("What is your gender? (W) - Woman, (M) - Man, (N) - Non-binary.");
         gender = input.next().charAt(0);
+        System.out.println("");
 
 
         // why doesn't this work?
