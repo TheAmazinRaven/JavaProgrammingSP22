@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Book Practice Problems/Chapter 1 - Preliminaries/Chapter 1 - Preliminaries.iml" filepath="$PROJECT_DIR$/Book Practice Problems/Chapter 1 - Preliminaries/Chapter 1 - Preliminaries.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lectures/Chapter 3 - Selections/Chapter 3 - Selections.iml" filepath="$PROJECT_DIR$/Lectures/Chapter 3 - Selections/Chapter 3 - Selections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lectures/Chapter 4 - Mathmatical Functions, Character, Strings/Chapter 4 - Mathmatical Functions, Character, Strings.iml" filepath="$PROJECT_DIR$/Lectures/Chapter 4 - Mathmatical Functions, Character, Strings/Chapter 4 - Mathmatical Functions, Character, Strings.iml" />
       <module fileurl="file://$PROJECT_DIR$/Homework and Programming Assignments/Homework 1/Homework 1.iml" filepath="$PROJECT_DIR$/Homework and Programming Assignments/Homework 1/Homework 1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Homework and Programming Assignments/Homework 2/Homework 2.iml" filepath="$PROJECT_DIR$/Homework and Programming Assignments/Homework 2/Homework 2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/JavaProgrammingSP22.iml" filepath="$PROJECT_DIR$/.idea/JavaProgrammingSP22.iml" />
     </modules>
   </component>

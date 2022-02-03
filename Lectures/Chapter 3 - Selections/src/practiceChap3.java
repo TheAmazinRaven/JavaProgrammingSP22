@@ -27,5 +27,12 @@ public class practiceChap3 {
             System.out.println("You're correct.");
         else
             System.out.println("You're wrong, please try again.");
+
+        System.out.println("A program to check if input is even or odd.");
+
+        System.out.println("Enter the numeric value.");
+        int val = input.nextInt();
+
+        if (val%2) == 0;
     }
 }
