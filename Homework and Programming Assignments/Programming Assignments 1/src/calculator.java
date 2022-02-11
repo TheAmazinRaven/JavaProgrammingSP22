@@ -3,61 +3,65 @@ import java.util.Scanner;
 public class calculator {
     public static void main(String[] args) {
 
-        System.out.println("He said \"java is fun\"");
-        char hh='G';
-        System.out.println("Lower case? " + Character.isLowerCase(hh));
+        double num1, num2;
 
-        String str1 = "Java";
-        System.out.println("The last index of a " + str1.lastIndexOf("a"));
+        Scanner input = new Scanner(System.in);
 
-        String str2= " is Fun ";
-        System.out.println(str1+str2);
-        System.out.println(str1.concat(str2));
-        System.out.println(str1.length());
-        System.out.println(str1.charAt(0));
-        System.out.println(str1.charAt(1));
-        System.out.println(str1.charAt(2));
-        System.out.println(str1.charAt(3));
+        System.out.println("Please enter two numbers, with a space in between.");
+        num1 = input.nextDouble();
+        num2 = input.nextDouble();
+        double numDegree = 0;
+        double numRadians = 0;
 
-        String p1="College";
-        String p2= "College";
-        if(p1 == p2)
-            System.out.println("The are the same word");
+        System.out.println("Please enter the operator (+, -, *, /, ^, %, t = sqrt, p = tan, q = sin, or r = cos)");
 
-        String p3 = new String("College");
-        String p4 = new String("College");
-        if(p3.equals(p4))
-            System.out.println("SAME");
+        char operator = input.next().charAt(0);
 
+        input.close();
 
+        switch (operator) {
+            case '+': // case for addition
+                System.out.printf("%.2f + %.2f = %.2f", num1, num2, (num1 + num2));
+                break;
+            case '-': // case for subtraction
+                System.out.printf("%.2f - %.2f = %.2f", num1, num2, (num1 - num2));
+                break;
+            case '*': // case for multiplication
+                System.out.printf("%.2f * %.2f = %.2f", num1, num2, (num1 * num2));
+                break;
+            case '/': // case for division
+                if (num2 != 0)
+                    System.out.printf("%.2f / %.2f = %.2f", num1, num2, (num1 / num2));
+                else
+                    System.out.println("Cannot divide by 0.");
+                break;
+            case 'q': // case for SIN
+                System.out.println("Please enter the number as a degree.");
 
-        //Simpler calc for few basic operation and one trig.
-        Scanner sc=new Scanner(System.in);
-        double num1;
-        double num2;
-        double ans=0;
-        char operator;
-        System.out.println("Please enter the first operand");
-        num1 = sc.nextDouble();
-        System.out.println("Please enter the second operand");
-        num2 = sc.nextDouble();
-        System.out.println("Please enter the operator use p=plus, m=minus"
-                + "t=times... s=sine");
-        operator = sc.next().charAt(0);
+                numDegree = input.nextDouble(); //stores input as double
+                numRadians = Math.toRadians(numDegree); // convert input to radians
+                System.out.printf("%.2f", Math.sin(numRadians));
+                break;
+            case 'p': // case for TAN
+                System.out.println("Please enter the number as a degree.");
 
-        if(operator == 'p')
-            ans = num1 + num2;
-        else if(operator == 'm')
-            ans = num1 - num2;
-        else if(operator == 's')
-            ans = Math.sin(Math.toRadians(num1));
+                numDegree = input.nextDouble(); //stores input as double
+                numRadians = Math.toRadians(numDegree); // convert input to radians
+                System.out.printf("%.2f", Math.tan(numRadians));
+                break;
+            case 'r': // case for COS
+                System.out.println("Please enter the number as a degree.");
 
+                numDegree = input.nextDouble(); //stores input as double
+                numRadians = Math.toRadians(numDegree); // convert input to radians
+                System.out.printf("%.2f", Math.cos(numRadians));
+                break;
+            case 't': // case for SquareRoot
+                System.out.println("Please enter the base of the square root.");
+                num1 = input.nextDouble();
+                System.out.printf("%.2f", Math.sqrt(num1));
+                break;
 
-        System.out.printf("The result is %.2f %n", ans);
-
-
-        double t = Math.random();
-        System.out.println(t);
-        System.out.println((int)(t*10));
+        }
     }
 }
